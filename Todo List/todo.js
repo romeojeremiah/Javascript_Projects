@@ -47,9 +47,19 @@ const removeItem = (todoList) => {
     }
 }
 
+const listItems = (todoList) => {
+    let listValues = 'Your list items are: '
+
+    for (let i = 0; i < todoList.length; i++){
+        listValues += `${i + 1} : ${todoList[i]} `
+    }
+    alert(listValues)
+}
+
 
 addTodo()
 addTodo()
 addTodo()
 console.log(todoList)
+listItems(todoList)
 removeItem(todoList)
